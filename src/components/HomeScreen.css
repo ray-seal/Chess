@@ -1,0 +1,128 @@
+.home-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.home-header {
+  text-align: center;
+}
+
+.home-header h1 {
+  font-size: 3rem;
+  margin: 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.home-header p {
+  color: #718096;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+.difficulty-section {
+  width: 100%;
+  text-align: center;
+}
+
+.difficulty-section h2 {
+  color: #e2e8f0;
+  margin-bottom: 1rem;
+}
+
+.difficulty-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  width: 100%;
+}
+
+.difficulty-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.5rem 1rem;
+  border: 2px solid transparent;
+  border-radius: 16px;
+  background: #1a1a2e;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.difficulty-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.difficulty-btn.easy {
+  border-color: #48bb78;
+}
+
+.difficulty-btn.easy:hover {
+  background: rgba(72, 187, 120, 0.1);
+}
+
+.difficulty-btn.medium {
+  border-color: #ecc94b;
+}
+
+.difficulty-btn.medium:hover {
+  background: rgba(236, 201, 75, 0.1);
+}
+
+.difficulty-btn.hard {
+  border-color: #ed8936;
+}
+
+.difficulty-btn.hard:hover {
+  background: rgba(237, 137, 54, 0.1);
+}
+
+.difficulty-btn.expert {
+  border-color: #f56565;
+}
+
+.difficulty-btn.expert:hover {
+  background: rgba(245, 101, 101, 0.1);
+}
+
+.difficulty-emoji {
+  font-size: 2rem;
+}
+
+.difficulty-label {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+.difficulty-desc {
+  font-size: 0.8rem;
+  color: #718096;
+}
+
+.leaderboard-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .home-header h1 {
+    font-size: 2rem;
+  }
+  
+  .difficulty-buttons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
