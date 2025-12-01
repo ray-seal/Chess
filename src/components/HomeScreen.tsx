@@ -1,5 +1,6 @@
 import type { Difficulty } from '../types';
 import { Leaderboard } from './Leaderboard';
+import '../styles/logo.css';
 import './HomeScreen.css';
 
 interface HomeScreenProps {
@@ -17,6 +18,7 @@ export function HomeScreen({ onStartGame }: HomeScreenProps) {
   return (
     <div className="home-screen">
       <header className="home-header">
+        <img src="/logo.svg" alt="Chess Game Logo" className="app-logo" />
         <h1>♟️ Chess Game</h1>
         <p>Challenge the AI and test your skills!</p>
       </header>

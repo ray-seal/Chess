@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Background with rounded corners -->
+  <rect width="100" height="100" rx="16" fill="#1a1a2e"/>
+  
+  <!-- Chess knight piece - monochrome/duotone design -->
+  <g transform="translate(20, 12) scale(0.6)">
+    <!-- Knight head and neck -->
+    <path d="M40 10 C20 10 15 25 15 40 C15 55 25 65 25 75 L25 85 L80 85 L80 75 C80 65 85 55 85 45 C85 30 75 15 55 12 L55 25 C55 25 65 30 65 40 C65 50 55 55 45 55 C35 55 30 50 30 45 C30 35 40 30 40 25 L40 10 Z" 
+          fill="#ffd700" stroke="#b8860b" stroke-width="2"/>
+    
+    <!-- Knight eye -->
+    <circle cx="40" cy="40" r="4" fill="#1a1a2e"/>
+    
+    <!-- Knight ear -->
+    <path d="M35 18 C30 8 45 5 45 15" fill="none" stroke="#ffd700" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Knight mane detail -->
+    <path d="M55 25 C60 20 70 25 70 35" fill="none" stroke="#b8860b" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Base -->
+    <rect x="20" y="85" width="65" height="15" rx="4" fill="#ffd700" stroke="#b8860b" stroke-width="2"/>
+  </g>
+</svg>
