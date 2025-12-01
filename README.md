@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./public/logo.svg" alt="Chess Game Logo" width="120" />
+</p>
+
 # Chess Game
 
 A simple chess game where you play against the computer with 4 difficulty settings: Easy, Medium, Hard, and Expert.

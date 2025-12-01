@@ -1,0 +1,13 @@
+.app-logo {
+  max-width: 160px;
+  height: auto;
+  display: block;
+  margin: 16px auto;
+}
+
+@media (max-width: 600px) {
+  .app-logo {
+    max-width: 120px;
+    margin: 12px auto;
+  }
+}
