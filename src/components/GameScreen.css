@@ -1,0 +1,169 @@
+.game-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.game-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+.back-btn {
+  background: transparent;
+  border: 1px solid #4a5568;
+  color: #a0aec0;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.back-btn:hover {
+  background: #2d3748;
+  color: #e2e8f0;
+}
+
+.game-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.difficulty-badge {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.difficulty-badge.easy {
+  background: rgba(72, 187, 120, 0.2);
+  color: #48bb78;
+}
+
+.difficulty-badge.medium {
+  background: rgba(236, 201, 75, 0.2);
+  color: #ecc94b;
+}
+
+.difficulty-badge.hard {
+  background: rgba(237, 137, 54, 0.2);
+  color: #ed8936;
+}
+
+.difficulty-badge.expert {
+  background: rgba(245, 101, 101, 0.2);
+  color: #f56565;
+}
+
+.game-stats {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+  background: #1a1a2e;
+  border-radius: 12px;
+  width: 100%;
+  justify-content: center;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: #718096;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+.status-message {
+  font-size: 1.1rem;
+  color: #e2e8f0;
+  padding: 0.75rem 1.5rem;
+  background: #2d3748;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.board-container {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.game-over-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.play-again-btn,
+.home-btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.play-again-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  color: white;
+}
+
+.play-again-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.home-btn {
+  background: transparent;
+  border: 2px solid #4a5568;
+  color: #a0aec0;
+}
+
+.home-btn:hover {
+  background: #2d3748;
+  color: #e2e8f0;
+}
+
+@media (max-width: 500px) {
+  .game-stats {
+    gap: 1rem;
+    padding: 0.75rem;
+  }
+  
+  .stat-value {
+    font-size: 1.25rem;
+  }
+  
+  .game-over-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .play-again-btn,
+  .home-btn {
+    width: 100%;
+  }
+}

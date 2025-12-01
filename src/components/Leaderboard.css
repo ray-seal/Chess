@@ -1,0 +1,96 @@
+.leaderboard {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border-radius: 16px;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.leaderboard h2 {
+  margin: 0 0 1rem 0;
+  color: #ffd700;
+  font-size: 1.5rem;
+}
+
+.leaderboard-toggle {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.leaderboard-toggle button {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #2d3748;
+  color: #a0aec0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+}
+
+.leaderboard-toggle button:hover {
+  background: #4a5568;
+}
+
+.leaderboard-toggle button.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.no-entries {
+  color: #718096;
+  text-align: center;
+  padding: 2rem;
+  font-style: italic;
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+  padding: 0.75rem 0.5rem;
+  text-align: center;
+  border-bottom: 1px solid #2d3748;
+}
+
+.leaderboard-table th {
+  color: #a0aec0;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.leaderboard-table td {
+  color: #e2e8f0;
+}
+
+.leaderboard-table tr:last-child td {
+  border-bottom: none;
+}
+
+.rank {
+  font-weight: bold;
+  color: #ffd700;
+}
+
+.difficulty.easy {
+  color: #48bb78;
+}
+
+.difficulty.medium {
+  color: #ecc94b;
+}
+
+.difficulty.hard {
+  color: #ed8936;
+}
+
+.difficulty.expert {
+  color: #f56565;
+}
