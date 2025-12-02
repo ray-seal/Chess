@@ -46,15 +46,11 @@ export function MoveGuide({ selectedSquare, legalMoves, onClose }: MoveGuideProp
         </button>
       </div>
       <div className="move-guide-content">
-        {legalMoves.length > 0 ? (
-          legalMoves.map((move, index) => (
-            <span key={index} className="move-guide-move">
-              {formatMove(move)}
-            </span>
-          ))
-        ) : (
-          <span className="move-guide-empty">No legal moves available</span>
-        )}
+        {legalMoves.map((move, index) => (
+          <span key={index} className="move-guide-move">
+            {formatMove(move)}
+          </span>
+        ))}
       </div>
     </div>
   );

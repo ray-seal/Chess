@@ -2,6 +2,7 @@ import { useState, useCallback, useEffect, useMemo } from 'react';
 import { Chess } from 'chess.js';
 import type { Square, Move } from 'chess.js';
 import { Chessboard } from 'react-chessboard';
+import type { SquareHandlerArgs } from 'react-chessboard';
 import type { Difficulty } from '../types';
 import { getBestMove } from '../utils/chessAI';
 import { saveLeaderboardEntry, generateEntryId } from '../utils/leaderboard';
@@ -93,7 +94,7 @@ export function GameScreen({ difficulty, onBackToHome }: GameScreenProps) {
   }, [game]);
 
   // Handle square click (for selecting pieces, moving, or clearing selection)
-  const handleSquareClick = useCallback(({ piece, square }: { piece: { pieceType: string } | null; square: string }) => {
+  const handleSquareClick = useCallback(({ piece, square }: SquareHandlerArgs) => {
     if (gameStatus !== 'playing' || game.turn() !== 'w' || isThinking) {
       return;
     }
@@ -308,7 +309,7 @@ export function GameScreen({ difficulty, onBackToHome }: GameScreenProps) {
             onPieceDrop: onDrop,
             onSquareClick: handleSquareClick,
             squareStyles: squareStyles,
-            allowDragging: false,
+            allowDragging: gameStatus === 'playing' && game.turn() === 'w' && !isThinking,
             boardStyle: {
               borderRadius: '8px',
               boxShadow: '0 4px 20px rgba(0, 0, 0, 0.3)',
