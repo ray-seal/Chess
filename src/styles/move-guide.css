@@ -1,0 +1,124 @@
+.move-guide-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  background: #2d3748;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: #a0aec0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.move-guide-toggle:hover {
+  background: #3d4a5c;
+}
+
+.move-guide-toggle.active {
+  background: rgba(102, 126, 234, 0.2);
+  border-color: #667eea;
+  color: #a0cfff;
+}
+
+.move-guide-toggle-label {
+  font-weight: 500;
+}
+
+.move-guide-toggle-icon {
+  font-size: 1rem;
+}
+
+/* Move Guide Panel */
+.move-guide-panel {
+  background: #1a1a2e;
+  border-radius: 12px;
+  padding: 1rem;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 0.5rem;
+  border: 1px solid #2d3748;
+}
+
+.move-guide-panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.move-guide-panel-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #e2e8f0;
+  margin: 0;
+}
+
+.move-guide-close-btn {
+  background: transparent;
+  border: none;
+  color: #718096;
+  cursor: pointer;
+  font-size: 1.25rem;
+  padding: 0.25rem;
+  line-height: 1;
+  transition: color 0.2s ease;
+}
+
+.move-guide-close-btn:hover {
+  color: #e2e8f0;
+}
+
+.move-guide-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.move-guide-move {
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  background: #2d3748;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: #e2e8f0;
+  font-family: 'Courier New', monospace;
+}
+
+.move-guide-empty {
+  color: #718096;
+  font-size: 0.9rem;
+}
+
+/* Square highlighting for legal moves */
+.legal-move-highlight {
+  background: radial-gradient(circle, rgba(102, 187, 106, 0.5) 25%, transparent 25%) !important;
+  background-size: 100% 100% !important;
+}
+
+.legal-move-capture-highlight {
+  background: radial-gradient(circle, transparent 50%, rgba(244, 67, 54, 0.4) 50%, rgba(244, 67, 54, 0.4) 70%, transparent 70%) !important;
+  background-size: 100% 100% !important;
+}
+
+.selected-piece-highlight {
+  background: rgba(255, 235, 59, 0.4) !important;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .move-guide-panel {
+    padding: 0.75rem;
+  }
+
+  .move-guide-toggle {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .move-guide-move {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.8rem;
+  }
+}
